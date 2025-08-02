@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Landing - Профессиональные услуги</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                    <span class="header__logo-text">FishPFish Landingro</span>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link nav__link--active">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Overlay для мобильного меню -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main class="main">
+        <!-- Главная секция -->
+        <section id="home" class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Добро пожаловать</h1>
+                <p class="hero__description">Мы создаем инновационные решения для вашего бизнеса</p>
+                <button class="hero__scroll-btn" id="scrollToAbout" aria-label="Перейти к следующей секции">
+                    <span class="hero__scroll-text">О нас</span>
+                    <svg class="hero__scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M7 13l5 5 5-5" />
+                        <path d="M7 6l5 5 5-5" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section id="about" class="about">
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h2 class="about__title">О нашей компании</h2>
+                        <p class="about__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <p class="about__description">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </p>
+                    </div>
+                    <div class="about__image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center&monochrome"
+                            alt="Черно-белая фотография офиса" class="about__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section id="services" class="services">
+            <div class="services__container">
+                <h2 class="services__title">Наши услуги</h2>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Веб-дизайн</h3>
+                        <p class="service-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Разработка</h3>
+                        <p class="service-card__description">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                <line x1="12" y1="18" x2="12.01" y2="18" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Мобильные приложения</h3>
+                        <p class="service-card__description">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Портфолио -->
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio__container">
+                <h2 class="portfolio__title">Наши работы</h2>
+                <div class="portfolio__grid">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center&monochrome"
+                            alt="Проект 1" class="portfolio-item__image">
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Корпоративный сайт</h3>
+                            <p class="portfolio-item__description">Современный дизайн для крупной компании</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&crop=center&monochrome"
+                            alt="Проект 2" class="portfolio-item__image">
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">E-commerce платформа</h3>
+                            <p class="portfolio-item__description">Интернет-магазин с современным функционалом</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop&crop=center&monochrome"
+                            alt="Проект 3" class="portfolio-item__image">
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Мобильное приложение</h3>
+                            <p class="portfolio-item__description">iOS и Android приложение для стартапа</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop&crop=center&monochrome"
+                            alt="Проект 4" class="portfolio-item__image">
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Веб-приложение</h3>
+                            <p class="portfolio-item__description">Интерактивная платформа для бизнеса</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop&crop=center&monochrome"
+                            alt="Проект 5" class="portfolio-item__image">
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">Лендинг страница</h3>
+                            <p class="portfolio-item__description">Высококонверсионная страница для продукта</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&crop=center&monochrome"
+                            alt="Проект 6" class="portfolio-item__image">
+                        <div class="portfolio-item__overlay">
+                            <h3 class="portfolio-item__title">CRM система</h3>
+                            <p class="portfolio-item__description">Управление клиентами и продажами</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="contact">
+            <div class="contact__container">
+                <h2 class="contact__title">Свяжитесь с нами</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Наши контакты</h3>
+                        <p class="contact__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <span class="contact__label">Email:</span>
+                                <span class="contact__value">info@gmail.com</span>
+                            </div>
+                            <div class="contact__item">
+                                <span class="contact__label">Адрес:</span>
+                                <span class="contact__value"> Киев, улиця Князев</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__form">
+                        <form class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Ваш email" required>
+                            </div>
+                            <div class="form__group">
+                                <textarea class="form__textarea" placeholder="Ваше сообщение" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="form__button">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить наверх">
+        <svg class="scroll-to-top__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
