@@ -424,3 +424,4 @@ function scrollToAbout() {
 if (scrollToAboutBtn) {
     scrollToAboutBtn.addEventListener('click', scrollToAbout);
 } 
+
