@@ -28,8 +28,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf'),
-        url('fonts/Inter/Inter-Light.woff') format('woff');
+    src: url('fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -37,8 +36,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf'),
-        url('fonts/Inter/Inter-Light.woff') format('woff');
+    src: url('fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -1029,4 +1027,3 @@ html {
         transition-duration: 0.01ms !important;
     }
 }
-
