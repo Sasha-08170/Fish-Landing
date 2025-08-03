@@ -100,20 +100,17 @@ portfolio/
 contact/
 ├── contact__container
 ├── contact__title
-├── contact__content
-├── contact__info/
-│   ├── contact__subtitle
+├── contact__info
+├── contact__item/
+│   ├── contact__title
 │   ├── contact__text
-│   └── contact__details/
-│       └── contact__item/
-│           ├── contact__label
-│           └── contact__value
 └── contact__form/
     └── form/
         ├── form__group
         ├── form__input
         ├── form__textarea
         └── form__button
+        └── form__map
 
 footer/
 ├── footer__container
@@ -199,5 +196,6 @@ Menu/
 - **Темная тема** - переключение между светлой и темной темой
 
  
+
 
 
